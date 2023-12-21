@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "c7cef775-51be-44ae-89dd-f3fc2dda9c60",
+		"name": "ContactApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21773681"
+	},
+	"item": [
+		{
+			"name": "Contact",
+			"item": [
+				{
+					"name": "ShowAlll contacts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://testapi.o7services.com/api/allcontact",
+							"protocol": "https",
+							"host": [
+								"testapi",
+								"o7services",
+								"com"
+							],
+							"path": [
+								"api",
+								"allcontact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Ravi",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ravi@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "9988729970",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "I need Help in this Contact System",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "This is all big detail of the contact System. I need proper clarrification about the ssytem. as the system is not work",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://testapi.o7services.com/api/addcontact",
+							"protocol": "https",
+							"host": [
+								"testapi",
+								"o7services",
+								"com"
+							],
+							"path": [
+								"api",
+								"addcontact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete contact",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://testapi.o7services.com/api/deletecontact/62bffcf4dc8aa726982b8b3a",
+							"protocol": "https",
+							"host": [
+								"testapi",
+								"o7services",
+								"com"
+							],
+							"path": [
+								"api",
+								"deletecontact",
+								"62bffcf4dc8aa726982b8b3a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "62bffcf4dc8aa726982b8b3a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://testapi.o7services.com/api/deletecontact",
+							"protocol": "https",
+							"host": [
+								"testapi",
+								"o7services",
+								"com"
+							],
+							"path": [
+								"api",
+								"deletecontact"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Ravi",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ravi@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "Punjab",
+									"type": "text"
+								},
+								{
+									"key": "qualification",
+									"value": "M.Tec",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "bazar",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Jalandhar",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "9988729970",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://testapi.o7services.com/api/register",
+							"protocol": "https",
+							"host": [
+								"testapi",
+								"o7services",
+								"com"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://testapi.o7services.com/api/allusers",
+							"protocol": "https",
+							"host": [
+								"testapi",
+								"o7services",
+								"com"
+							],
+							"path": [
+								"api",
+								"allusers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://testapi.o7services.com/api/deleteuser/62c1cdc03a1d9c1fddf4d9e3",
+							"protocol": "https",
+							"host": [
+								"testapi",
+								"o7services",
+								"com"
+							],
+							"path": [
+								"api",
+								"deleteuser",
+								"62c1cdc03a1d9c1fddf4d9e3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SingleUser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://testapi.o7services.com/api/singleUser/62c1cdc03a1d9c1fddf4d9e3",
+							"protocol": "https",
+							"host": [
+								"testapi",
+								"o7services",
+								"com"
+							],
+							"path": [
+								"api",
+								"singleUser",
+								"62c1cdc03a1d9c1fddf4d9e3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
